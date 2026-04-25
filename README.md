@@ -63,6 +63,14 @@ python build_exe.py
 ```
 生成文件位于 `dist/AutoInput.exe`
 
+### Linux
+在 Linux 系统上同样可以使用 `build.py` 生成可执行文件：
+```bash
+python3 build.py
+```
+生成文件位于 `dist/自动输入工具`
+
+
 ## 操作说明
 
 1. 在文本框中输入要自动打字的内容
