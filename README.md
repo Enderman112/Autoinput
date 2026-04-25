@@ -51,7 +51,6 @@ python build_exe.py
 ```
 生成文件位于 `dist/AutoInput.exe`
 
-**注意**：PyInstaller 只能在目标系统上打包对应格式。在 macOS 上无法生成 .exe 文件。
 
 ## 操作说明
 
@@ -66,4 +65,3 @@ python build_exe.py
 - `input.py` - 主程序
 - `build.py` - macOS 构建脚本
 - `build_exe.py` - Windows 构建脚本
-- `自动输入工具.spec` - PyInstaller 配置文件
