@@ -3,6 +3,7 @@ import pyautogui
 import tkinter as tk
 from tkinter import ttk
 import threading
+from pypinyin import pinyin, Style
 
 class AutoInputApp:
     def __init__(self, root):
@@ -114,8 +115,11 @@ class AutoInputApp:
             self.root.after(0, lambda: self.status_label.configure(
                 text="正在输入...", foreground="orange"))
             
-            # 执行自动输入
-            pyautogui.write(text)
+            # 执行自动输入（中文转拼音后输入）
+            result = pinyin(text, style=Style.NORMAL)
+            pinyin_str = ''.join([item[0] for item in result])
+            pyautogui.write(pinyin_str)
+            pyautogui.press('space')
             pyautogui.press('enter')
             
             # 完成
