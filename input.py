@@ -8,7 +8,7 @@ class AutoInputApp:
     def __init__(self, root):
         self.root = root
         self.root.title("自动输入工具")
-        self.root.geometry("400x300")
+        self.root.geometry("600x400")
         self.root.resizable(False, False)
         
         # 创建主框架
@@ -52,16 +52,16 @@ class AutoInputApp:
         button_frame = ttk.Frame(main_frame)
         button_frame.pack(fill=tk.X, pady=(0, 10))
         
-        style = ttk.Style()
-        style.configure("Cn.TButton", font=("PingFang SC", 12))
+        btn_font = ("PingFang SC", 13)
         
-        self.start_button = ttk.Button(button_frame, text="开始自动输入", 
-                                      command=self.start_auto_input, style="Cn.TButton")
+        self.start_button = tk.Button(button_frame, text="开始自动输入", 
+                                      command=self.start_auto_input,
+                                      font=btn_font, padx=20, pady=8)
         self.start_button.pack(side=tk.LEFT, padx=(0, 10))
         
-        self.stop_button = ttk.Button(button_frame, text="停止", 
+        self.stop_button = tk.Button(button_frame, text="停止", 
                                      command=self.stop_auto_input, state=tk.DISABLED,
-                                     style="Cn.TButton")
+                                     font=btn_font, padx=20, pady=8)
         self.stop_button.pack(side=tk.LEFT)
         
         # 状态显示
