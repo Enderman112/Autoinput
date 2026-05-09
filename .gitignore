@@ -6,4 +6,17 @@
 *.iml
 out
 gen
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.spec
+.venv/
 .spec
