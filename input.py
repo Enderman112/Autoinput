@@ -68,6 +68,10 @@ class AutoInputApp:
         # 状态显示
         self.status_label = ttk.Label(main_frame, text="就绪", foreground="green", font=("PingFang SC", 12))
         self.status_label.pack(pady=(10, 0))
+
+        # 版本号
+        version_label = ttk.Label(main_frame, text="V1.0.5", foreground="gray", font=("PingFang SC", 9))
+        version_label.pack(side=tk.BOTTOM, pady=(10, 0))
         
         # 线程控制
         self.running = False
