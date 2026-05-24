@@ -87,6 +87,7 @@ python3 build.py
 - `requirements.txt` - Python 依赖列表
 - `build.py` - macOS 应用构建脚本
 - `build_exe.py` - Windows EXE 构建脚本
+- `build_dmg.py` - macOS DMG 安装包构建脚本
 
 ## 自动构建
 
