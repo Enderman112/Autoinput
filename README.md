@@ -84,6 +84,14 @@ python3 build.py
 ## 文件说明
 
 - `input.py` - 主程序（GUI + 自动输入逻辑）
+- `requirements.txt` - Python 依赖列表
 - `build.py` - macOS 应用构建脚本
 - `build_exe.py` - Windows EXE 构建脚本
-- `build_dmg.py` - macOS DMG 安装包构建脚本
+
+## 自动构建
+
+项目配置了 GitHub Actions，每次 push 到 main 分支会自动：
+
+1. 生成版本号（格式：`v20250510-abc1234`）
+2. 构建 Linux、macOS、Windows 三端程序
+3. 发布到 [GitHub Releases](https://github.com/Enderman112/Autoinput/releases)
