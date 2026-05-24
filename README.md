@@ -29,7 +29,7 @@ cd Autoinput
 
 2. 安装依赖：
 ```bash
-pip install pyautogui pypinyin
+pip install -r requirements.txt
 ```
 
 ## 使用
